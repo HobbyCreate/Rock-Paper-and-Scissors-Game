@@ -2,10 +2,131 @@
     display: flex;
     height: 85px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #465F63;
-    color: #FFFFFF;
+    color: #ece7e7;
     font-size: 1.2rem;
 }
 
+.header-components h2 {
+    margin-top: 45px;
+}
+
+.toggle-container {
+    position: relative;
+    top: -70px;
+    right: -10px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    background-color: #797272;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-container-active {
+    position: relative;
+    top: -70px;
+    right: -10px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    background-color: #000000;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.circle {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 2px;
+    right: -4px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    transition: right 0.2s ease-in-out;
+}
+
+.circle-active {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 2px;
+    right: -52px;
+    border-radius: 50%;
+    /* color: #000000; */
+    background: rgb(255, 255, 255);
+    transition: right 0.2s ease-in-out;
+}
+
+.circle span {
+    position: relative;
+    /* top: 12px; */
+    font-size: 1.3rem;
+}
+
+.circle-active span {
+    position: relative;
+    /* top: 12px; */
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-components {
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .header-components h2 {
+        margin-top: 55px;
+        margin-right: 20px;
+    }
+
+    .toggle-container {
+        top: -60px;
+        height: 40px;
+        width: 80px;
+    }
+
+    .toggle-container-active {
+        top: -60px;
+        height: 40px;
+        width: 80px;
+    }
+    
+    .circle {
+        height: 35px;
+        width: 35px;
+        top: 2px;
+        right: -3px;
+    }
+    
+    .circle-active {
+        height: 35px;
+        width: 35px;
+        top: 2px;
+        right: -42px;
+    }
+    
+    .circle span {
+        /* top: 10px; */
+        font-size: 1rem;
+    }
+    
+    .circle-active span {
+        /* top: 10px; */
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-components h2 {
+        margin-top: 65px;
+        margin-right: 20px;
+        font-size: 0.9rem;
+    }
+}

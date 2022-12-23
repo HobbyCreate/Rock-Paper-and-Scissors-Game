@@ -1,7 +1,7 @@
 .choice-container {
     flex-flow: column nowrap;
     position: relative;
-    top: calc(120px - 85px);
+    /* top: calc(120px - 100px); */
     right: calc(275px - 50%);
     display: flex;
     justify-content: center;
@@ -16,6 +16,7 @@
 .choice-container h3 {
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .choice {
@@ -29,6 +30,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-bottom: 30px;
 }
 .rock-img,
 .paper-img,
@@ -38,6 +40,7 @@
     margin-bottom: 30px;
     rotate: 0deg;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .rock-img:hover,
@@ -45,4 +48,18 @@
 .scissors-img:hover {
     rotate: 10deg;
     transform: scale(1.6);
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        width: 400px;
+        right: calc(200px - 50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choice-container {
+        width: 320px;
+        right: calc(160px - 50%);
+    }
 }
