@@ -1,0 +1,48 @@
+.choice-container {
+    flex-flow: column nowrap;
+    position: relative;
+    top: calc(120px - 85px);
+    right: calc(275px - 50%);
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 550px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.choice-container h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rock,
+.paper,
+.scissors {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.rock-img,
+.paper-img,
+.scissors-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    rotate: 0deg;
+    transition: all 0.3s ease-in-out;
+}
+
+.rock-img:hover,
+.paper-img:hover,
+.scissors-img:hover {
+    rotate: 10deg;
+    transform: scale(1.6);
+}
